@@ -1,4 +1,4 @@
-html, body, nav, main, h1, h2, h3, p {
+html, body, nav, main, h1, h2, h3, p, ul, li, span {
   padding: 0;
   margin: 0;
 }
@@ -41,6 +41,25 @@ main h1 {
 #question-number {
   margin-bottom: 8px;
 }
+
+#options {
+  max-width: 500px;
+  margin: 32px auto;
+  padding-left: 16px;
+}
+
+#options ul {
+  list-style: none;
+}
+
+.option {
+  margin-bottom: 16px;
+}
+
+.option-letter {
+  font-weight: bold;
+}
+
 
 @media screen and (min-width: 576px) {
   main {
