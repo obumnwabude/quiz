@@ -48,12 +48,13 @@ main h1 {
   padding-left: 16px;
 }
 
-#options ul {
-  list-style: none;
+.option {
+  display: block;
+  margin-bottom: 16px;
 }
 
-.option {
-  margin-bottom: 16px;
+.option input {
+  display: none;
 }
 
 .option-letter {
