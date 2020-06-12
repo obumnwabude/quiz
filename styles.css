@@ -3,6 +3,31 @@ html, body, main, h1 {
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 48px;
+}
+
+body {
+  padding-top: 48px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 48px;
+  background-color: black;
+  color: white;
+}
+
+nav #brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px;
+  display: inline-block;
+}
+
 h1 {
   font-size: 24px;
 }
