@@ -71,6 +71,14 @@ main h1 {
   font-weight: bold;
 }
 
+#button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#next-button {
+  padding: 8px;
+}
 
 @media screen and (min-width: 576px) {
   main {
