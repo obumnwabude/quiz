@@ -1,5 +1,6 @@
 const optionForm = document.querySelector('#option-form');
 const questionContentP = document.querySelector('#question-content');
+const optionInputs = document.querySelectorAll('.option input');
 const optionContentSpans = document.querySelectorAll('.option-content');
 const qOption = {
     question: 'Jose Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
@@ -15,6 +16,11 @@ const changeQuestions = (qOption) => {
     questionContentP.textContent = qOption.question;
     optionContentSpans.forEach((span, index) => {
         span.textContent = qOption.options[index];
+    });
+    optionInputs.forEach((input) => {
+        if (input.checked) {
+            input.checked = false;
+        }
     });
 };
 
