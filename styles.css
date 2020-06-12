@@ -45,7 +45,7 @@ main h1 {
 #options {
   max-width: 500px;
   margin: 32px auto;
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .option {
@@ -55,6 +55,16 @@ main h1 {
 
 .option input {
   display: none;
+}
+
+.inner-option-container {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.option input:checked + .inner-option-container {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
 
 .option-letter {
