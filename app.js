@@ -5,8 +5,9 @@ const optionForm = document.querySelector('#option-form');
 const questionContentP = document.querySelector('#question-content');
 const optionInputs = document.querySelectorAll('.option input');
 const optionContentSpans = document.querySelectorAll('.option-content');
-let currentQuestion = 0;
+let currentQuestion = -1;
 const answeredOptions = [];
+
 const changeDOMQuestion = (qOption) => {
     questionContentP.textContent = qOption.question;
     optionContentSpans.forEach((span, index) => {
@@ -27,6 +28,9 @@ const changeQuestion = () => {
     ++currentQuestion;
     changeDOMQuestion(qOptions[currentQuestion]);
 };
+
+// fill the questions at first time load 
+changeQuestion();
 
 optionForm.addEventListener('submit', (e) => {
     e.preventDefault();
